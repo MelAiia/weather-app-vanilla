@@ -1,0 +1,33 @@
+body {
+  font-family: arial, helvetica, sans-serif;
+}
+
+.weather-card {
+  max-width: 600px;
+  margin: 35px auto;
+  padding: 20px;
+  border: 1px solid #c4c1e0;
+  border-radius: 15px;
+}
+h1 {
+  color: #085f63;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 27px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #085f63;
+  font-size: 19px;
+  font-weight: 100;
+  line-height: 19px;
+}
