@@ -9,6 +9,7 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather app</title>
   </head>
@@ -17,10 +18,10 @@
       <div class="weather-wrapper">
         <div class="weather-card">
           <div class="overview">
-            <h1>Kyiv</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Wednesday 14 June, 14:46</li>
-              <li>Mostly cloudy</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -32,16 +33,16 @@
                   id="icon"
                 />
                 <div>
-                  <strong>21</strong
+                  <strong id="temperature"></strong
                   ><span class="units">°C | <a href="">°F</a></span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 56%</li>
-                <li>Wind: 2 km/h</li>
+                <li>Pressure: <span id="pressure"></span>mb</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
             </div>
           </div>
