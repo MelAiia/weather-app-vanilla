@@ -20,10 +20,10 @@ body {
 
 h1 {
   color: #085f63;
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 100;
   line-height: 27px;
-  margin-bottom: 0px;
+  margin-bottom: -5px;
 }
 
 ul {
@@ -36,9 +36,10 @@ li {
   padding: 0;
   list-style: none;
   color: #085f63;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 100;
   line-height: 19px;
+  margin-bottom: 12px;
 }
 
 li::first-letter {
@@ -47,13 +48,13 @@ li::first-letter {
 
 .weather-temperature img {
   margin-right: 10px;
-  height: 64px;
-  width: 64px;
+  height: 75px;
+  width: 75px;
 }
 
 .weather-temperature strong {
   color: #f78536;
-  font-size: 64px;
+  font-size: 75px;
   line-height: 1;
   font-weight: 400;
 }
@@ -61,7 +62,7 @@ li::first-letter {
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
-  top: -32px;
+  top: -41px;
 }
 
 .weather-temperature .active {
