@@ -56,6 +56,7 @@ function displayTemperature(response) {
 
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("src", `${response.data.condition.icon_url}`);
+  iconElement.setAttribute("alt", response.data.condition.description);
 }
 
 let apiKey = "4aof9ee43493t03092f5abdcf7d5bf5d";
