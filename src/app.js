@@ -34,7 +34,7 @@ function formatDate(timestamp) {
   ];
   let month = months[date.getMonth()];
   let currentDate = date.getDate();
-  return `${day} ${currentDate} ${month}, ${hours}:${minutes}`;
+  return `${day} ${currentDate} of ${month}, ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {
