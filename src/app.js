@@ -55,8 +55,9 @@ function displayForecast(response) {
         class="image-forecast"
       />
       <div class="temperature-forecast">
-        <span class="max-temperature">18°</span>
-        <span class="min-temperature">12°</span>
+        <span class="max-temperature">18°C</span>
+        <br/>
+        <span class="min-temperature">12°C</span>
       </div>
     </div>
   `;
