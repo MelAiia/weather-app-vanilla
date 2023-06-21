@@ -37,6 +37,28 @@ function formatDate(timestamp) {
   return `${day} ${currentDate} of ${month}, ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = "";
+  forecastHTML = `
+  <div class="row">
+    <div class="col-2">
+      <div class="date-forecast">Thu</div>
+      <img
+        src="images/sun-behind-cloud_26c5.png"
+        alt=""
+        class="image-forecast"
+      />
+      <div class="temperature-forecast">
+        <span class="max-temperature">18°</span>
+        <span class="min-temperature">12°</span>
+      </div>
+    </div>
+  </div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let celsiusTemperature = response.data.temperature.current;
@@ -102,3 +124,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("Kyiv");
+displayForecast();
