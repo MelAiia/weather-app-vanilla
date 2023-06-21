@@ -83,14 +83,31 @@ li::first-letter {
 }
 
 .weather-forecast {
+  color: #085f63;
   margin-top: 20px;
   text-align: center;
 }
 .image-forecast {
   display: block;
   margin-left: 18px;
+  width: 42px;
 }
 
 .date-forecast {
   font-size: 20px;
+}
+
+.temperature-forecast {
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+.max-temperature {
+  color: #f78536;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.min-temperature {
+  color: #f78536;
 }
