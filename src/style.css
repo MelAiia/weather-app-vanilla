@@ -74,3 +74,10 @@ li::first-letter {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+
+.pres,
+.humid,
+.speed {
+  color: #f78536;
+  font-size: 20px;
+}
