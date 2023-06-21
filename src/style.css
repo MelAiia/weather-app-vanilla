@@ -81,3 +81,16 @@ li::first-letter {
   color: #f78536;
   font-size: 20px;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.image-forecast {
+  display: block;
+  margin-left: 18px;
+}
+
+.date-forecast {
+  font-size: 20px;
+}
