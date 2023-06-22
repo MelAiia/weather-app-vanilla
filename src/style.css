@@ -68,19 +68,10 @@ p::first-letter {
 }
 
 .weather-temperature .units {
+  color: #085f63;
   position: relative;
   font-size: 16px;
   top: -41px;
-}
-
-.weather-temperature .active {
-  color: #085f63;
-  cursor: default;
-  text-decoration: none;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
 }
 
 .pres,
