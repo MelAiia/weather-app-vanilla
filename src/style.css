@@ -15,7 +15,7 @@ body {
 }
 
 .overview {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 h1 {
@@ -47,9 +47,13 @@ li::first-letter {
 }
 
 .weather-temperature img {
-  margin-right: 10px;
-  height: 75px;
-  width: 75px;
+  margin-right: 55px;
+  height: 100px;
+  width: 100px;
+}
+
+.temp-c-f {
+  margin-top: 14px;
 }
 
 .weather-temperature strong {
