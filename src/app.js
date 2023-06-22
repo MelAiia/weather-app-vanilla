@@ -37,27 +37,43 @@ function formatDate(timestamp) {
   return `${day} ${currentDate} of ${month}, ${hours}:${minutes}`;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
   console.log(response.data.daily);
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
-  days.forEach(function (day) {
+
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
     <div class="col-2">
-      <div class="date-forecast">${day}</div>
+      <div class="date-forecast">${formatDay(forecastDay.time)}</div>
       <img
-        src="images/sun-behind-cloud_26c5.png"
+        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
+          forecastDay.condition.icon
+        }.png"
         alt=""
         class="image-forecast"
       />
       <div class="temperature-forecast">
-        <span class="max-temperature">18°C</span>
+        <span class="max-temperature">${
+          forecastDay.temperature.maximum
+        }°C</span>
         <br/>
-        <span class="min-temperature">12°C</span>
+        <span class="min-temperature">${
+          forecastDay.temperature.minimum
+        }°C</span>
       </div>
     </div>
   `;
