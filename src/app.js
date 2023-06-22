@@ -101,6 +101,8 @@ function displayTemperature(response) {
   cityElement.innerHTML = response.data.city;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.condition.description;
+  let feelsLikeElement = document.querySelector("#feels");
+  feelsLikeElement.innerHTML = Math.round(response.data.temperature.feels_like);
   let pressureElement = document.querySelector("#pressure");
   pressureElement.innerHTML = response.data.temperature.pressure;
   let humidityElement = document.querySelector("#humidity");
