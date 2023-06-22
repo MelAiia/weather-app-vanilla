@@ -67,13 +67,13 @@ function displayForecast(response) {
         class="image-forecast"
       />
       <div class="temperature-forecast">
-        <span class="max-temperature">${
+        <span class="max-temperature">${Math.round(
           forecastDay.temperature.maximum
-        }°C</span>
+        )}°C</span>
         <br/>
-        <span class="min-temperature">${
+        <span class="min-temperature">${Math.round(
           forecastDay.temperature.minimum
-        }°C</span>
+        )}°C</span>
       </div>
     </div>
   `;
