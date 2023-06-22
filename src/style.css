@@ -51,7 +51,7 @@ p::first-letter {
 }
 
 .weather-temperature img {
-  margin-right: 55px;
+  margin-right: 12px;
   height: 100px;
   width: 100px;
 }
@@ -76,7 +76,8 @@ p::first-letter {
 
 .pres,
 .humid,
-.speed {
+.speed,
+.feels-like {
   color: #f78536;
   font-size: 20px;
 }
