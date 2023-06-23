@@ -117,3 +117,10 @@ p {
 .min-temperature {
   color: #f78536;
 }
+
+.contact-info {
+  display: block;
+  margin-top: 7px;
+  text-align: center;
+  color: #085f63;
+}
