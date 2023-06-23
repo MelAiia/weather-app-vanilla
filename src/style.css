@@ -44,10 +44,11 @@ li {
   margin-bottom: 23px;
 }
 
-li::first-letter {
-  text-transform: capitalize;
+p {
+  color: #085f63;
 }
 
+li::first-letter,
 p::first-letter {
   text-transform: capitalize;
 }
@@ -100,9 +101,6 @@ p::first-letter {
   text-align: center;
 }
 
-p {
-  color: #085f63;
-}
 .weather-forecast {
   color: #085f63;
   margin-top: 20px;
