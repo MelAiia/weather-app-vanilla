@@ -3,8 +3,8 @@ body {
 }
 
 .weather-wrapper {
-  max-width: 650px;
-  margin: 50px auto;
+  max-width: 700px;
+  margin: 70px auto;
 }
 
 .weather-card {
@@ -82,8 +82,10 @@ p::first-letter {
 .humid,
 .speed,
 .feels-like {
+  display: block;
   color: #f78536;
-  font-size: 20px;
+  font-size: 29px;
+  text-align: center;
 }
 
 p {
@@ -123,4 +125,21 @@ p {
   margin-top: 7px;
   text-align: center;
   color: #085f63;
+}
+
+.feel-like,
+.press,
+.humidit,
+.wind-speed {
+  padding: 5px;
+  text-align: center;
+}
+
+.feel-like:hover,
+.press:hover,
+.humidit:hover,
+.wind-speed:hover {
+  background: #feffdf;
+  border-radius: 6px;
+  padding: 5px;
 }
