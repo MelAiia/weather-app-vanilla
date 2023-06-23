@@ -82,8 +82,8 @@ p::first-letter {
 .weather-temperature .units {
   color: #085f63;
   position: relative;
-  font-size: 16px;
-  top: -41px;
+  font-size: 23px;
+  top: -37px;
 }
 
 .weather-description {
