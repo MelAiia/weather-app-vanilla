@@ -24,11 +24,13 @@ h1 {
   font-weight: 100;
   line-height: 27px;
   margin-bottom: -5px;
+  margin-left: 5px;
 }
 
 ul {
   margin: 0;
   padding: 0;
+  margin-left: 6px;
 }
 
 li {
@@ -63,6 +65,7 @@ p::first-letter {
 
 .description-icon {
   margin-left: 13px;
+  font-size: 20px;
 }
 
 .temp-c-f {
